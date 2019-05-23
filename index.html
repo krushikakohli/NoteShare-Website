@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Frontend Dev Course</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="" class="logo">
+                <nav>
+                <a href="#" class="hide-desktop">
+                    <img src="images/ham.svg" alt="toggle menu" class="menu" id="menu">
+                </a>
+                <ul class="show-desktop hide-mobile" id="nav">
+                    <li id="exit" class="exit-btn hide-desktop">
+                        <img src="images/exit.svg" alt="exit menu">
+                    </li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Subjects</a></li>
+                    <li><a href="aboutpage.html">About</a></li>
+                    </ul>
+            </nav>
+        </header>
+        <section>
+            <img src="images/book.jpg" class="server">
+        
+            <h1>NoteShare</h1>
+            <p class="subhead">Share notes globally...</p>
+            </section>
+    </div>
+    <div class="blue-container">
+        <div class="container">
+            <ul>
+                <li>
+                    <img src="images/icon-1.svg">
+                    <p>Upload notes of any subject out of enumerous domains worldwide. </p>
+                </li>
+                <li>
+                    <img src="images/icon-1.svg" >
+                    <p>Download notes of any subject or any domain available worldwide and its free.</p>
+                </li>
+                <li>
+                    <img src="images/icon-1.svg" >
+                    <p>Notes of languages like C, C++, J2SE, J2EE, Python, Machine-Learning, AI etc.</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="gray-container">
+        <div class="container">
+            <ul>
+                <li>
+                    <figure>
+                        <img src="images/user1.png" style="width:60px; height:60px;" >
+                        <blockquote>Lorem ipsum dolor sit, Voluptas tenetur totam, dolore Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet,fuga..</blockquote>
+                        <figcaption>- ABC DEF</figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <img src="images/user2.png" style="width:60px; height:60px;">
+                        <blockquote>Lorem ipsum dolor sit, Voluptas tenetur totam, dolore Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet,fuga..</blockquote>
+                        <figcaption>- ABC DEF</figcaption>
+                    </figure>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="container">
+        <h2>Start sharing notes now!!!</h2>
+        <a href="#" class="cta">Get Started</a>
+    </div>
+    <script>
+        var menu = document.getElementById('menu');
+        var nav = document.getElementById('nav');
+        var exit = document.getElementById('exit');
+        menu.addEventListener('click', function(e) {
+            nav.classList.toggle('hide-mobile');
+            e.preventDefault();
+        });
+        exit.addEventListener('click', function(e){
+            nav.classList.add('hide-mobile');
+            e.preventDefault();
+        });
+    </script>
+</body>
+</html>
